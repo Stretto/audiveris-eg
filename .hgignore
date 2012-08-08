@@ -1,6 +1,5 @@
 # First, use regexp syntax -------------------------------------------------------
 syntax: regexp
-
 \.hgignore$
 \.chg\..*$
 \.conflict\~$
@@ -29,7 +28,14 @@ temp$
 tesseract\.log
 www/docs/api
 
-# Now, switch to glob syntax -------------------------------------------------
+bin
+.DS_Store
+.project
+.settings
+manifest.mf
+nbbuild.xml
+.classpath
+# Now, switch to regexp syntax -------------------------------------------------
 syntax: glob
 
 audiveris.bat

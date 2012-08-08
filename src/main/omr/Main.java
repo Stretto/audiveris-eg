@@ -158,8 +158,9 @@ public class Main
 
             // At this point all tasks have completed (normally or not)
             // So shutdown immediately the executors
-            OmrExecutors.shutdown(true);
-
+//            logger.info("SHUTTING DOWN ...");
+//            OmrExecutors.shutdown(true);
+            
             // Store latest constant values on disk?
             if (constants.persistBatchCliConstants.getValue()) {
                 ConstantManager.getInstance().storeResource();
